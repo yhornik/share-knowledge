@@ -19,6 +19,7 @@ export interface ItemChoice {
 })
 export class AppComponent {
   title = 'pocnew13';
+  
 
   private selectedItemSubject = new BehaviorSubject<ItemChoice[]>([]);
   selectedItemNew$ = this.selectedItemSubject.asObservable();
